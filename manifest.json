@@ -1,0 +1,15 @@
+{
+  "name": "crore-to-millions",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "description": "Quickly convert values from INR crore to USD millions",
+  "homepage_url": "https://srijanshetty.in",
+  "browser_action": {
+      "default_popup": "html/popup.html"
+  },
+  "icons": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "128": "icon128.png"
+  }
+}
