@@ -13,7 +13,8 @@ const convert = (value, rate) => Number(value * rate).toFixed(2);
 document.addEventListener('DOMContentLoaded', async () => {
   const res = await fetch("https://api.exchangeratesapi.io/latest?symbols=INR&base=USD")
   const data = await res.json();
-  const rate = 10 / data["rates"]["INR"];
+  const fx = data?.rates?.INR || 75;
+  const rate = 10 / fx;
 
   const source= document.getElementById('source');
   const target = document.getElementById('target');
